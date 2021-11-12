@@ -34,7 +34,7 @@
                           </li>
               
                           <li class="nav-item">
-                            <a class="nav-link" href="consulta.php">Login</a>
+                            <a class="nav-link" href="consulta.php">Consultar BD</a>
                           </li>
                         </ul>
                         <span class="navbar-text numero">
