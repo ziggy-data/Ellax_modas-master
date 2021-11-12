@@ -1,0 +1,198 @@
+body{
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    font-family: 'Permanent Marker';
+    background: rgb(255, 192, 203);
+    padding: 20px 0;
+}
+
+nav{
+    position: absolute;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0px 0px 22px;
+}
+
+.col-4{
+    text-align: center;
+}
+
+.numero{
+    font-weight: bold;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+footer{
+    text-align: center;
+    background-color: #c980b0;
+    padding: 0 0 20px;
+}
+
+.copyright {
+    font-family: 'Permanent Marker';
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+/* FIM DO HEADER E FOOTER */
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 10px 0 1em;
+    clear: left;
+}
+
+.principal{
+    padding: 3m 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.icone{
+    max-width: 20%;
+    float: left;
+    margin: 0 20px 20px 0;
+    border-radius: 50%;
+}
+
+.conteudo{
+    margin: 0 auto;
+    padding: 0 0 30px ;
+    background: linear-gradient(#FEFEFE,#c980b0);
+}
+
+.conteudo p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.beneficios{
+    padding: 3em 0;
+}
+
+.mapa-conteudo{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.servicos{
+    text-align: center;
+    font-weight: bold;
+}
+
+.servicos p{
+    font-size: 30px;
+}
+
+.horarios table{    
+margin: 30px auto 30px;
+width: 50%;
+text-align: center;
+}
+    
+.horarios thead{
+background-color: darkgray;
+color: white;
+font-weight: bold;
+}
+    
+.horarios td, th{
+border: 1px solid black;
+padding: 8px 15px;
+font-weight: bold;
+font-size: 20px;
+text-align: center;
+}
+
+
+@media screen and (max-width: 860px){
+.caixa, .principal,.produtos, .conteudo-beneficios, .mapa-conteudo, .video{
+    width: auto;
+}
+
+h1{
+    text-align: center;
+}
+
+nav{
+    position: static;
+    text-align: center;
+}
+
+.col{
+    text-align: -webkit-center;
+}
+
+nav a{
+    font-size: 20px;
+}
+
+.lista-beneficios, .imagem-beneficios{
+    width: 100%;
+}
+
+.conteudo-beneficios{
+    text-align: center;
+}
+
+.utensilios{
+    width: 200px;
+}
+
+.mapa-conteudo{
+    display: flex;
+}
+
+form{
+    margin: 5px auto;
+}
+.produtos li{
+    width: 290px;
+    margin: 2% 4%;
+}
+
+.horarios table{    
+    margin: 30px auto 30px;
+    width: -webkit-fill-available;
+}
+
+}

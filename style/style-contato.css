@@ -1,0 +1,253 @@
+body{
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    font-family: 'Permanent Marker';
+    background: rgb(255, 192, 203);
+    padding: 20px 0;
+}
+
+nav{
+    position: absolute;
+}
+
+fieldset{
+    display: grid;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0px 0px 22px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+.numero{
+    font-weight: bold;
+}
+
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+footer{
+    text-align: center;
+    background-color: #c980b0;
+    padding: 0 0 20px;
+}
+
+.copyright {
+    font-family: 'Permanent Marker';
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px;
+}
+/* FIM DO HEADER E FOOTER */
+
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 10px 0 1em;
+    clear: left;
+}
+
+.principal{
+    padding: 3m 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+
+form{
+    margin: 40px 60px;
+    padding: 0px 60px;
+}
+
+form label, form legend{
+    font-size: 20px;
+    margin: 0 0 10px;
+    font-family: sans-serif;
+}
+
+form legend{
+    width:auto
+}
+
+.input-padrao{
+    display: inline-block;
+    margin: 0 0 20px;
+    padding: 5px 10px;
+    width: 90%;
+}
+
+.checkbox{
+    margin: 20px 0px;
+}
+
+.enviar{
+    width: 90%;
+    padding: 15px 0;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+    margin: 20px 0px;
+}
+
+.enviar:hover{
+    background-color: darkorange;
+    transform: scale(1.1);   
+}
+
+.radio-sexo{
+    display: flex;
+    align-items: baseline;
+    margin: 10px 0px;
+    flex-flow: wrap;
+}
+
+.form-check{
+    margin-left: 30px;
+}
+
+.radio-sexo label{
+    padding: 10px 10px ;
+}
+
+.calendario{
+    display: flex;
+    align-items: baseline;
+}
+
+.calendario input{
+    margin: 10px;
+    padding: 3px;
+}
+
+
+.fundo-contato{
+    background: linear-gradient(to bottom, #ffffff 15%, #c980b0 100%);
+}
+
+.horarios-contato table{    
+    margin: 30px auto 30px;
+    width: 50%;
+}
+
+.horarios-contato thead{
+    background-color: darkgray;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.horarios-contato td, th{
+    border: 1px solid black;
+    padding: 8px 15px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 860px){
+.caixa{
+    width: auto;
+}
+
+h1{
+    text-align: center;
+}
+
+nav{
+    position: static;
+    text-align: center;
+}
+
+.col{
+    text-align: -webkit-center;
+}
+
+nav a{
+    font-size: 20px;
+}
+
+.lista-beneficios, .imagem-beneficios{
+    width: 100%;
+}
+
+.conteudo-beneficios{
+    text-align: center;
+}
+
+.utensilios{
+    width: 200px;
+}
+
+.mapa-conteudo{
+    display: flex;
+}
+
+form{
+    margin: 5px auto;
+    padding: 10px 5px;
+}
+.produtos li{
+    width: 290px;
+    margin: 2% 4%;
+}
+
+.radio-sexo{
+    justify-content: space-around;
+}
+
+
+.input-padrao{
+    width: 90%;
+    width: -webkit-fill-available;
+}
+
+.horarios-contato table{    
+    margin: 30px auto 30px;
+    width: -webkit-fill-available;
+}
+
+.enviar{
+    margin: 30px auto;
+    width: -webkit-fill-available;
+}
+
+}
