@@ -87,51 +87,6 @@ footer{
     font-style: italic;
 }
 
-form{
-    margin: 40px 60px;
-    padding: 0px 60px;
-}
-
-form label, form legend{
-    font-size: 20px;
-    margin: 0 0 10px;
-    font-family: sans-serif;
-}
-
-form legend{
-    width:auto
-}
-
-.input-padrao{
-    display: inline-block;
-    margin: 0 0 20px;
-    padding: 5px 10px;
-    width: 90%;
-}
-
-.checkbox{
-    margin: 20px 0px;
-}
-
-.enviar{
-    width: 100%;
-    padding: 15px 0;
-    background-color: orange;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    transition: 1s all;
-    cursor: pointer;
-    margin: 20px 0px;
-}
-
-.enviar:hover{
-    background-color: darkorange;
-    transform: scale(1.1);   
-}
-
 .fundo-contato{
     background: linear-gradient(to bottom, #ffffff 15%, #c980b0 100%);
 }

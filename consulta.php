@@ -30,11 +30,11 @@
                           </li>
                           
                           <li class="nav-item">
-                            <a class="nav-link active" href="formulario.html">Contato</a>
+                            <a class="nav-link" href="formulario.html">Contato</a>
                           </li>
               
                           <li class="nav-item">
-                            <a class="nav-link" href="consulta.php">Consultar BD</a>
+                            <a class="nav-link active" href="consulta.php">Consultar BD</a>
                           </li>
                         </ul>
                         <span class="navbar-text numero">
