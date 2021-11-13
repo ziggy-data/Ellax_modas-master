@@ -52,7 +52,7 @@
         <?php
         //http://localhost/pesquisa/consulta.php
 
-        // $dsnPostgres = "pgsql:host=localhost;port=5432;dbname=aulaphp;user=postgres;password=admlinux";
+        // $dsnPostgres = "pgsql:host=localhost;port=5432;dbname=contato;user=postgres;password=admlinux";
 
         $dsnMysql = "mysql:host=localhost;dbname=contato";
 
