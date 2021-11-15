@@ -55,14 +55,14 @@ $pdoMysql->exec($sql); //Grava o insert no banco Mysql / MariaDb
                           </li>
                           
                           <li class="nav-item">
-                            <a class="nav-link active" href="formulario.html">Contato</a>
+                            <a class="nav-link " href="formulario.html">Contato</a>
                           </li>
               
                           <li class="nav-item">
-                            <a class="nav-link" href="consulta.php">Consultar BD</a>
+                            <a class="nav-link" href="consulta.php">Consultar contato</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="consulta_pesquisa.php">Consultar pesquisa</a>
+                            <a class="nav-link active" href="consulta_pesquisa.php">Consultar pesquisa</a>
                           </li>
                         </ul>
                         <span class="navbar-text numero">
