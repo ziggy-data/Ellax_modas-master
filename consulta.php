@@ -36,6 +36,9 @@
                           <li class="nav-item">
                             <a class="nav-link active" href="consulta.php">Consultar BD</a>
                           </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="consulta_pesquisa.php">Consultar BD</a>
+                          </li>
                         </ul>
                         <span class="navbar-text numero">
                           📞 Zap: (21) 97699 - 2852
