@@ -66,7 +66,7 @@ $pdoMysql->exec($sql); //Grava o insert no banco Mysql / MariaDb
                             <a class="nav-link" href="consulta.php">Consultar BD</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link active" href="consulta_pesquisa.php">Consultar pesquisa</a>
+                            <a class="nav-link " href="consulta_pesquisa.php">Consultar pesquisa</a>
                           </li>
                         </ul>
                         <span class="navbar-text numero">
@@ -98,12 +98,10 @@ $pdoMysql->exec($sql); //Grava o insert no banco Mysql / MariaDb
                         <label class="form-check-label" for="pergunta1">Sim</label>
                         <input type="radio" class="form-check-input" id="pergunta1" value='1' name="pergunta1">
                     </div>
+              </div>
                     
-                      <br>
-                      <br>
-                    
-                    <label for="pergunta2" class="form-label"> Qual nível de importância da sua estética? 
-                        Pontue de 0 a 10 sendo:  0 - pouca importância,  10 - importa muito.</label>
+                    <label for="pergunta2" class="form-label"> Qual nível de importância da sua estética? </label>
+                    <p>Pontue de 0 a 10 sendo:  0 - Pouca importância,  10 - Muito Importante.</p>
                     <input type="number" id="pergunta2" name="pergunta2"  class="input-padrao"
                     required min="0" max="10"> 
 
