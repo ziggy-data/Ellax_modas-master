@@ -48,6 +48,5 @@ Na página "Contato" foi utilizado CSS para dimensionar inputs e labels formatar
 
 Na página "Login" foi utilizado CSS para o botão "Login" e os outros inputs foram inputs do Bootstrap.
 
-![Login](imagens/login.png "Login")
 
 [As imagens utilizadas na página "Loja" foram retirados deste site](https://www.flaticon.com/br/)
