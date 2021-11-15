@@ -24,7 +24,7 @@ create table pesquisa (
 
 Bibliotecas utilizadas: Bootstrap, W3school
 
-Este conteúdo esta sendo criado junto com as minhas aulas de front-end da faculdade onde irei criar um projeto.
+Este conteúdo esta sendo criado junto com as minhas aulas de front-end da faculdade onde irei criar um projeto de uma loja no qual indica seus serviços, sua história, um formulário para contato no qual interage com um banco de dados (fazendo inserção de dados e consulta) .
 
 Em todos as páginas o menu é um navbar do bootstrap.
 
@@ -32,9 +32,7 @@ Possui integração com PHP. nesse caso foi utilizado o PHPmyadmin.
 
 Neste projeto conseguimos inserir dados pela página 'Contato' e consultar pela página 'Consulta BD'
 
-Foi desafiado fazer uma parte de dados do cliente e um outro com dados de uma pesquisa separados mas foi decidido posteriormente juntar por sentido lógico e pensando na facilidade ao cliente.
-
-no arquivo 'grava.php' possui um comentário com o código SQL caso queiram testar o site.
+Depois de fazer o envio de dados na página "contato" ateáves de um formulário e fazer o envio com sucesso irá aparecer uma pesquisa pedindo sua opinião. 
 
 Na página Loja foi mais utilizado CSS para dimensionar e para apresentação, temos uma vitrine dos produtos ofertado pela loja Ellax.
 
