@@ -37,7 +37,7 @@
                             <a class="nav-link active" href="consulta.php">Consultar BD</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link active" href="consulta_pesquisa.php">Consultar pesquisa</a>
+                            <a class="nav-link " href="consulta_pesquisa.php">Consultar pesquisa</a>
                           </li>
                         </ul>
                         <span class="navbar-text numero">
@@ -85,10 +85,9 @@
         ?>
     </div>
 
-    <footer>
-        <img src="imagens/icone.png">
-        <p class="copyright">&copy; Copyright Ellax Modas 2019 - 2021</p>
-    </footer>
+  <footer>
+      <img src="imagens/icone.png">
+      <p class="copyright">&copy; Copyright Ellax Modas 2019 - 2021</p>
+  </footer>
 </body>
-
 </html>
