@@ -2,11 +2,9 @@
 
 <?php
 
-//http://localhost/pesquisa/consulta.php
-
 // $dsnPostgres = "pgsql:host=localhost;port=5432;dbname=aulaphp;user=postgres;password=admlinux";
 
-$dsnMysql = "mysql:host=localhost;dbname=aulaphp";
+$dsnMysql = "mysql:host=localhost;dbname=contato";
 
 $pdoMysql = new PDO($dsnMysql, "root"); //mysql
 

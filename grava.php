@@ -8,18 +8,6 @@ $mensagem = $_POST['mensagem'];
 $data = $_POST['data'];
 $novidade = $_POST['novidade'];
 
-/*** 
-   Criar a tabela no sql server:
-   
-	create database contato;
-
-	use contato;
-
-	CREATE TABLE cliente ( id INT NOT NULL identity , nome VARCHAR(90) NOT NULL ,
-	email VARCHAR(90) NOT NULL , telefone INT NOT NULL ,
-	sexo BINARY(1) NOT NULL , mensagem VARCHAR(120) NOT NULL ,
-	data_contato DATE NOT NULL , novidade BINARY(1) NOT NULL , PRIMARY KEY (id));
- */
 
 $sql = "insert into cliente (nome,email,telefone,sexo, mensagem, data_contato, novidade) 
 values('$nome','$email', '$telefone','$sexo','$mensagem', '$data','$novidade')";
@@ -42,13 +30,12 @@ $pdoMysql->exec($sql); //Grava o insert no banco Mysql / MariaDb
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Ellax Modas - A loja de beleza dos seus sonhos </title>
-        <link rel="stylesheet" href="style/reset.css">
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="style/style-login.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Ellax Modas - A loja de beleza dos seus sonhos </title>
+      <link rel="stylesheet" href="style/reset.css">
+      <link rel="stylesheet" href="style/style-contato.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     </head>
 
     <body class="fundo-contato">
@@ -57,7 +44,6 @@ $pdoMysql->exec($sql); //Grava o insert no banco Mysql / MariaDb
                 <img src="imagens/icone.png" alt="Ellax Modas" >  
                 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(255, 192, 203);" >
                     <div class="container-fluid">
-                      
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                       </button>
@@ -77,7 +63,10 @@ $pdoMysql->exec($sql); //Grava o insert no banco Mysql / MariaDb
                           </li>
               
                           <li class="nav-item">
-                            <a class="nav-link " href="consulta.php">Consultar BD</a>
+                            <a class="nav-link" href="consulta.php">Consultar BD</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="consulta_pesquisa.php">Consultar pesquisa</a>
                           </li>
                         </ul>
                         <span class="navbar-text numero">
@@ -88,40 +77,63 @@ $pdoMysql->exec($sql); //Grava o insert no banco Mysql / MariaDb
                   </nav>
             </div>
         </header>
+        
+        <form  action="grava_pesquisa.php" method="post">
+         <fieldset>
+             <legend><strong>Gostaríamos de sua opinião sobre a cuidados pessoais. </strong></legend>
+             <p>Respeitando a lei LGPD, não iremos divulgar seus dados.</p>
 
-		<br><br><br>
+             <label for='email'>Email:</label>
+             <input required type="email" placeholder="seuemail@dominio.com" class="input-padrao" name="email"id='email' maxlength="100" >
 
-		<div class="w3-container">
-		<h1 class="w3-center w3-animate-left">A sua mensagem foi enviada!!</h1>
-		<br><br>
-		<h1 class="w3-center w3-animate-left">Não se esqueça de ir visitar a nossa loja!!</h1>
-		</div>
-		<br><br><br>
+             <div class="radio-sexo">
+                <legend>Você tem interesse em adquirir roupas de marca?</legend>
 
-        <div class="horarios-contato">
-            <table >
-                <thead>
-                    <tr>
-                        <th>Dia</th>
-                        <th>Horário</th>
-                    </tr>
-                </thead>  
-                <tbody>
-                    <tr>
-                        <td>Segunda - Sexta</td>
-                        <td>8h ~ 20h</td>
-                    </tr>
-                    <tr>
-                        <td>Sabado - Domingo</td>
-                        <td>8h ~ 22h</td>
-                    </tr>
-                    <tr>
-                        <td colspan="5">Rio de Janeiro - RJ</td> 
-                    </tr>
-                </tbody>  
-            </table> 
-        </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="pergunta1">Não</label>
+                        <input type="radio" class="form-check-input" id="pergunta1" value='0' name="pergunta1" checked>
+                      </div>
 
+                    <div class="form-check">
+                        <label class="form-check-label" for="pergunta1">Sim</label>
+                        <input type="radio" class="form-check-input" id="pergunta1" value='1' name="pergunta1">
+                    </div>
+                    
+                      <br>
+                      <br>
+                    
+                    <label for="pergunta2" class="form-label"> Qual nível de importância da sua estética? 
+                        Pontue de 0 a 10 sendo:  0 - pouca importância,  10 - importa muito.</label>
+                    <input type="number" id="pergunta2" name="pergunta2"  class="input-padrao"
+                    required min="0" max="10"> 
+
+             <input type="submit" value="enviar formulario"  class="enviar">   
+            </fieldset>
+
+            <div class="horarios-contato">
+              <table >
+                  <thead>
+                      <tr>
+                          <th>Dia</th>
+                          <th>Horário</th>
+                      </tr>
+                  </thead>  
+                  <tbody>
+                      <tr>
+                          <td>Segunda - Sexta</td>
+                          <td>8h ~ 20h</td>
+                      </tr>
+                      <tr>
+                          <td>Sabado - Domingo</td>
+                          <td>8h ~ 22h</td>
+                      </tr>
+                      <tr>
+                          <td colspan="5">Rio de Janeiro - RJ</td> 
+                      </tr>
+                  </tbody>  
+              </table> 
+          </div>
+        </form>
         <footer>
 			<img src="imagens/icone.png">
 			<p class="copyright">&copy; Copyright Ellax Modas 2019 - 2021</p>

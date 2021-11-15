@@ -2,25 +2,15 @@
 
 // var_dump($_GET);
 
-$email = $_GET['email'];
-$pergunta1 = $_GET['pergunta1'];
-$pergunta2 = $_GET['pergunta2'];
-
-/**
- * Criar a tabela no mysql ou no postgresql
-  create table pesquisa (
-	id serial primary key,
-	email varchar(100),
-	pergunta1 integer,
-	pergunta2 integer
-    );
- */
+$email = $_POST['email'];
+$pergunta1 = $_POST['pergunta1'];
+$pergunta2 = $_POST['pergunta2'];
 
 $sql = "insert into pesquisa (email, pergunta1, pergunta2) 
 values('$email', '$pergunta1', '$pergunta2')";
 
 
-//$dsnPostgres = "pgsql:host=localhost;port=5432;dbname=aulaphp;user=postgres;password=admlinux";
+//$dsnPostgres = "pgsql:host=localhost;port=5432;dbname=contato;user=postgres;password=admlinux";
 
 $dsnMysql = "mysql:host=localhost;dbname=contato";
 
