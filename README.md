@@ -1,18 +1,18 @@
 # Ellax Modas
 
 
-# Criar o Database em SQL:
+## Criar o Database em SQL:
 ```
 create database contato;
 ```
-# Criar a tabela de contato em SQL:
+## Criar a tabela de contato em SQL:
 ```
 CREATE TABLE cliente ( id INT NOT NULL identity , nome VARCHAR(90) NOT NULL ,
 email VARCHAR(90) NOT NULL , telefone INT NOT NULL ,
 sexo BINARY(1) NOT NULL , mensagem VARCHAR(120) NOT NULL ,
 data_contato DATE NOT NULL , novidade BINARY(1) NOT NULL , PRIMARY KEY (id));
 ```
-# Criar a tabela de pesquisa em SQL:
+## Criar a tabela de pesquisa em SQL:
 ```
 create table pesquisa (
 	id serial primary key,
