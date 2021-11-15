@@ -36,7 +36,7 @@ Depois de fazer o envio de dados na página "contato" ateáves de um formulário
 
 Na página Loja foi mais utilizado CSS para dimensionar e para apresentação, temos uma vitrine dos produtos ofertado pela loja Ellax.
 
-![Loja](imagens/produtos.png "Loja")
+![Loja](imagens/loja.png "Loja")
 
 Na página "Quem Somos" foi mais utilizado CSS para dimensionar e para apresentação, nela temos alguns conteúdos utilizados para apresentação da loja e para indicar o local ao cliente.
 
